@@ -1,9 +1,14 @@
 // #1 Create an object called 'me' that has three keys, 'firstname' 'age' and 'state'. Assign the keys the appropriate values.
-
+var me={
+  age: 29,
+  firstname: 'Amy',
+  state: 'Nevada'
+};
 // CODE HERE
 
 // #2 Add a new key/value pair to the me object using dot notation. The new key should be 'faveColor' and set it to your favorite color as a string
 
+me.faveColor=('blue'); //for some reason its not working.
 //CODE HERE
 
 // #3 Below is an object, 'message'. Below it, add a 'text' key using bracket notation and assign it a string of whatever you would like.
@@ -13,6 +18,7 @@ var message = {
   userName: me.firstname
 };
 //DON'T TOUCH THE CODE ABOVE
+message[text]= 'I am a string.';
 // CODE HERE
 
 // #4 Create an object called 'adjustCount' and create two methods. One called 'upVote' and one called 'downVote'. upVote should take in a number and add one to it and downVote should take in a number and minus one from it.
@@ -20,11 +26,11 @@ var message = {
 // CODE HERE
 
 // #5 Create an array called 'myFriends' with four of your friends names
-
+var myFriends = ['Dar','Kat','Virg','Ty'];
 // CODE HERE
 
 // #6 Add a fifth friends name to the end of your myFriends array
-
+myFriends[4]= 'Britt';
 // CODE HERE
 
 // #7 Create a 'myArrayCopy' variable. It should equal the myArray variable. Use the built in JavaScript method to create a copy.
