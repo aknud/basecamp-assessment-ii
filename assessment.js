@@ -65,9 +65,7 @@ function evensOnly() {
 //console.log(evensOnly(myNumbers));
 
 // #9 Using filter(), return only your friends of the array of people below. Assign it to a variable called 'trueFriends'.
-var trueFriends = peopleIknow.filter(function(obj){
-  return obj.friend;
-});
+
 // CODE HERE
 
 var peopleIknow = [
@@ -79,13 +77,15 @@ var peopleIknow = [
   { name: "Holly", friend: true }
 ];
 
+var trueFriends = peopleIknow.filter(function(obj){
+  return obj.friend;
+});
 
 // #10 Create a function called indexFinder that will loop over an array and return a new array of the indexes of the contents e.g. [243, 123, 4, 12] would return [0,1,2,3]. 
 
 // Create a new variable called 'indexes' and set it to contain the indexes of randomNumbers.
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
-
-function indexFinder(){
-
-};
-
+function indexFinder(el, index, arr) {
+  return index;
+}
+var indexes = randomNumbers.map(indexFinder); 
